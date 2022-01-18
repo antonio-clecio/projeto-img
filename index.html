@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        h5, h4 {
+            font-weight: 300;
+        }
+
+        #instrucoes {
+            max-width: 940px;
+        }
+
+        #titulo {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            padding: 10px 15px;
+            font-weight: 300;
+            color: #102B6E;
+        }
+
+        #conteudo {
+            background: #102B6E;
+            color: #FFFF;
+            padding: 15px;
+            border-radius: 20px;
+        }
+
+        .row_conteudo {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .foto_instrucao {
+            width: 165px;
+            height: 110px;
+            border-radius: 10px;
+            margin: 0 auto;
+            background-size: cover;
+            background-color: turquoise;
+        }
+
+        .dashed_botton {
+            border-bottom: 1px dashed #FFFF;
+        }
+
+        .dashed_right {
+            border-right: 1px dashed #FFF;
+        }
+
+        .instrucao {
+            width: 33.333%;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            padding: 20px 10px;
+            flex-grow: 1;
+        }
+        .instrucao img {
+            max-height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="instrucoes">
+        <h3 id="titulo"><b>Instruções</b> para envio das imagens</h3>
+        <div id="conteudo">
+            <div class="row_conteudo dashed_botton">
+                <div class="instrucao dashed_right">
+                    <h4>Foto de <b>frente</b> do documento</h4>
+                    <div><img src="img/iconfrontdocument.jpeg" alt="frente_documento"></div>
+                    <div><small>A foto deve ser tirada da frente<br/> do RG, CNH, RNE, CRNM ou<br/> Passaporte, contando sua foto</small></div>
+                </div>
+                <div class="instrucao dashed_right">
+                    <h4>Foto do <b>verso</b> do documento</h4>
+                    <div><img src="img/icondowndocment.jpeg" alt="frente_documento"></div>
+                    <div><small>A foto deve ser tirada do verso<br/> do RG, CNH, RNE, CRNM ou<br/> Passaporte, contando sua foto</small></div>
+                </div>
+                <div class="instrucao">
+                    <h4><b>Selfie</b></h4>
+                    <div><img src="img/iconselfie.jpeg" alt="frente_documento"></div>
+                    <div><small>A selfie deve ser tirada<br/> sem nenhum acessório<br/></small></div>
+                </div>
+            </div>
+            <div class="row_conteudo">
+                <div class="instrucao dashed_right">
+                    <h4>Exemplo da <b>frente</b></h4>
+                    <div class="foto_instrucao" style="background-image: url('img/rgfrente.jpeg');"></div>
+                </div>
+                <div class="instrucao dashed_right">
+                    <h4>Exemplo do <b>verso</b></h4>
+                    <div class="foto_instrucao" style="background-image: url('img/rgverso.jpeg');"></div>
+                </div>
+                <div class="instrucao">
+                    <h4>Exemplo de <b>selfie</b></h4>
+                    <div class="foto_instrucao" style="background-image: url('img/self.jpeg');"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
